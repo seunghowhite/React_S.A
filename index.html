@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React S.A</title>
+
+  <style>
+    .inpo {
+      background-color: gainsboro;
+      width: 300px;
+      height: 300px;
+      padding: 20px;
+      border-radius: 10px;
+      margin: auto;
+    }
+  </style>
+
+  <script>
+
+
+    function Checkform() {
+      alert("제출완료");
+    }
+  </script>
+</head>
+
+<body>
+  <form name="frm" class="inpo" onsubmit="Checkform()">
+
+    <div><a>Firstname:</a><br>
+      <input type="text" name="Firstname" required="">
+    </div>
+
+
+    <div><a>Lastname:</a><br>
+      <input type="text" name="Lastname" required="">
+    </div>
+
+
+    <div><a>Email:</a><br>
+      <input type="email" name="email" required="">
+    </div>
+
+
+    <div><a>gnder:</a>
+      <input type="radio" name="chk_info" value="Male" required="">Male
+      <input type="radio" name="chk_info" value="Female" required="">Female
+    </div>
+
+    <div><a>Favorite:</a>
+      <input type="checkbox" name="HTML" value="HTML">HTML
+      <input type="checkbox" name="JAVA" value="JAVA">JAVA
+      <input type="checkbox" name="JavaScript" value="JavaScript">JavaScript
+    </div>
+
+    <div><a>Browser:</a>
+      <select name="select" id="">
+        <option>크롬</option>
+        <option>파이어폭스</option>
+        <option>사파리</option>
+      </select>
+    </div>
+
+    <div><a>BirthDay:</a>
+      <input type="date" name="BirthDay" required="">
+    </div>
+
+    <button type="submit">제출</button>
+
+
+  </form>
+
+
+
+
+
+</body>
+
+</html>
